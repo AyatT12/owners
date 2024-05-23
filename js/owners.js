@@ -27,16 +27,7 @@
       l(".sidebar .collapse").collapse("hide"));
   });
 
-  l("body .sidebar").on(
-    "mousewheel DOMMouseScroll wheel",
-    function (e) {
-      var o;
-      768 < l(window).width() &&
-        ((o = (o = e.originalEvent).wheelDelta || -o.detail),
-        (this.scrollTop += 30 * (o < 0 ? 1 : -1)),
-        e.preventDefault());
-    }
-  );
+  
 
   l(document).on("scroll", function () {
     100 < l(this).scrollTop()
