@@ -19,16 +19,7 @@
     }
   });
 
-  l(window).resize(function () {
   
-      !l(".sidebar").hasClass("toggled") &&
-      (l("body").addClass("sidebar-toggled"),
-      l(".sidebar").addClass("toggled"),
-      l(".sidebar .collapse").collapse("hide"));
-  });
-
-  
-
   l(document).on("scroll", function () {
     100 < l(this).scrollTop()
       ? l(".scroll-to-top").fadeIn()
