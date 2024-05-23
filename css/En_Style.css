@@ -107,3 +107,8 @@ body {
         animation-timing-function: transform cubic-bezier(.18, 1.25, .4, 1), opacity cubic-bezier(0, 1, .4, 1);
     }
 }
+@media (max-width: 765px) {
+    .sidebar.toggled {
+        transform: translateX(-100%) !important;
+    }
+}

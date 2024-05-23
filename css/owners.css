@@ -300,8 +300,8 @@ width: 75%;
     background: #1cc83a;
     border-radius: 50%;
     position: absolute;
-    bottom: 4px;
-    right: 15px;
+    bottom: 0px;
+    right: 5px;
     border: 1px solid white;
   }
   @media (max-width:1300px) {
