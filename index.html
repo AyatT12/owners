@@ -16,25 +16,26 @@
         rel="stylesheet">
     <!-- Custom styles for this template-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link href="css/global.css" rel="stylesheet">
+    <link href="css/Layout.css" rel="stylesheet">
+    <link href="css/owners.css" rel="stylesheet">
 
-    
+
+
 </head>
 
-<body id="page-top">
+<body id="page-top" class="sidebar-toggled">
 
     <!-- Page Wrapper -->
 
     <div id="wrapper">
         <!-- Sidebar -->
-        <ul class="navbar-nav  sidebar sidebar-dark accordion " id="accordionSidebar">
+        <ul class="navbar-nav  sidebar sidebar-dark accordion toggled" id="accordionSidebar">
 
             <div class="d-flex flex-column justify-content-between h-100 ">
                 <div>
                     <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn d-md-none rounded-circle d-flex">
-                        <i class="fa-solid fa-xmark fa-1x toggleButton" ></i>
+                        <i class="fa-solid fa-xmark fa-1x toggleButton"></i>
                     </button>
                     <!-- Sidebar - Brand -->
                     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html"
@@ -42,11 +43,11 @@
                         <div class="row flex-column align-items-center">
                             <div class="col-12 d-flex align-items-center justify-content-center ">
                                 <div class="Profile">
-                                    <img src="img/arabic-man_21730-4132.avif" alt="Profile photo" class="user-photo wow fadeInUp">
+                                    <img src="img/arabic-man_21730-4132.avif" alt="Profile photo" class="user-photo ">
                                 </div>
                             </div>
                             <div class=" sidebar-brand-text col-12  mb-5  mt-3">
-                                <h6 class="user_name wow fadeInUp" data-wow-delay="1.2s"> عبدالخالق يعقوب أنس إسماعيل
+                                <h6 class="user_name"> عبدالخالق يعقوب أنس إسماعيل
 
                                 </h6>
                                 <p> مدير الشؤون المالية
@@ -70,7 +71,7 @@
                         </a>
                     </li>
 
-                    
+
                     <!-- Heading -->
                     <li class="nav-item  mt-2">
                         <a class="nav-link" href="employees.html">
@@ -79,17 +80,18 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseUtilities"
-                            aria-expanded="true" aria-controls="collapseUtilities">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                            data-bs-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                             <span> المؤشرات </span>
                         </a>
                         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                             data-parent="#accordionSidebar">
                             <div class="bg-white py-2 collapse-inner rounded">
-                                <a class="collapse-item" href="tenant.html"> <img src="img/Frame (3).svg">  المستـأجرين </a>
+                                <a class="collapse-item" href="tenant.html"> <img src="img/Frame (3).svg"> المستـأجرين
+                                </a>
                                 <a class="collapse-item" href="Contracts.html"> <img src="img/Frame (2).svg"> العقود</a>
-                                <a class="collapse-item" href="Cars.html"> <img src="img/Frame(4).svg">  السيارات </a>
-                                
+                                <a class="collapse-item" href="Cars.html"> <img src="img/Frame(4).svg"> السيارات </a>
+
                             </div>
                         </div>
                     </li>
@@ -107,12 +109,12 @@
                 <div>
                     <div class="row flex-column align-items-center justify-content-center mb-lg-5">
                         <div class="col-12 d-flex align-items-center justify-content-center ">
-                            <div class="Profile">
-                                <img src="img/logo1.svg" alt="company logo">
+                            <div class="Profile company-logo">
+                                <img src="img/logo1.svg" alt="company logo" class="mb-3 w-100">
                             </div>
                         </div>
-                        <div class=" sidebar-brand-text col-12 text-center">
-                            <h6 class="company_name"> شركة كدي لتأجير السيارات </h6>
+                        <div class="sidebar-brand-text col-12 text-center">
+                            <h6 class="company_name "> شركة كدي لتأجير السيارات </h6>
                         </div>
                     </div>
                 </div>
@@ -130,18 +132,19 @@
 
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-transparent topbar static-top  align-items-baseline">
-                  
-                   <div class="col bars-button">
-                     <!-- Sidebar Toggle (Topbar) -->
-                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                        <i class="fa fa-bars toggleButton"></i>
-                    </button>
-                   </div>
-                   <div class="col lang-button-col">
-                    <input type="checkbox" id="myCheckbox" class="d-none">
-                    <label for="myCheckbox" class="lang-button" id="checkboxLabel"> English <i class="fa-solid fa-globe lang_globe"></i> </label>
-                </div>
-              
+
+                    <div class="col bars-button">
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars toggleButton"></i>
+                        </button>
+                    </div>
+                    <div class="col lang-button-col">
+                        <input type="checkbox" id="myCheckbox" class="d-none">
+                        <label for="myCheckbox" class="lang-button" id="checkboxLabel"> English <i
+                                class="fa-solid fa-globe lang_globe"></i> </label>
+                    </div>
+
                 </nav>
                 <!-- End of Topbar -->
 
@@ -153,7 +156,6 @@
                     <!-- Content Row -->
                     <div class="row">
 
-                        <!-- Earnings (Monthly) Card Example -->
                         <div class=" col-sm-6   col-xl-3  mb-4">
                             <div class="card border-left-primary h-100 py-2">
                                 <div class="card-body">
@@ -191,7 +193,6 @@
                             </div>
                         </div>
 
-                        <!-- Earnings (Monthly) Card Example -->
                         <div class=" col-sm-6   col-xl-3  mb-4">
                             <div class="card border-left-success h-100 py-2">
                                 <div class="card-body">
@@ -229,7 +230,6 @@
                             </div>
                         </div>
 
-                        <!-- Earnings (Monthly) Card Example -->
                         <div class=" col-sm-6   col-xl-3  mb-4">
                             <div class="card border-left-success h-100 py-2">
                                 <div class="card-body">
@@ -326,7 +326,7 @@
                             <div class="card  mb-4">
                                 <!-- Card Body -->
                                 <div class="card-body ">
-                                    <h4> المديونيات  </h4>
+                                    <h4> المديونيات </h4>
                                     <div class="row align-items-center">
                                         <div class="col-lg-5">
                                             <div class="row h-100 gap-2">
@@ -588,16 +588,6 @@
             </div>
             <!-- End of Main Content -->
 
-            <!-- Footer -->
-            <!-- <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
-                    </div>
-                </div>
-            </footer> -->
-            <!-- End of Footer -->
-
         </div>
         <!-- End of Content Wrapper -->
 
@@ -629,26 +619,27 @@
         </div>
     </div>
 
-    <!-- wow -->
+
     <!-- charts.js core JavaScript-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
 
-    <!--link to make javascript function operate-->
+    <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
         integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- bootsrab animation -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <!--makes bootsrab animation works-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
 
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="js/owners.js"></script>
 
     <script src="js/demo/chart-pie-demo.js"></script>
 

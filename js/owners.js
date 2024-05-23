@@ -1,6 +1,15 @@
 !(function (l) {
   "use strict";
-  const Layer = document.querySelector('.layer');
+  if (window.innerWidth <= 767)
+    {
+      l("body").addClass("sidebar-toggled");
+      l(".sidebar").addClass("toggled");
+    }
+    if (window.innerWidth > 767)
+      {
+        l("body").toggleClass("sidebar-toggled");
+        l(".sidebar").toggleClass("toggled");
+      }
 
   l("#sidebarToggle, #sidebarToggleTop").on("click", function (e) {
     l("body").toggleClass("sidebar-toggled");
@@ -11,13 +20,11 @@
   });
 
   l(window).resize(function () {
-    l(window).width() < 768 && l(".sidebar .collapse").collapse("hide");
-    l(window).width() < 480 &&
+  
       !l(".sidebar").hasClass("toggled") &&
       (l("body").addClass("sidebar-toggled"),
       l(".sidebar").addClass("toggled"),
       l(".sidebar .collapse").collapse("hide"));
-
   });
 
   l("body .sidebar").on(
@@ -50,8 +57,6 @@
   });
 
 
- 
-  
 })(jQuery);
 
 ///////////////////////language change//////////////////////////////////
@@ -122,3 +127,4 @@ function removeCustomCSS() {
     cssFile.parentNode.removeChild(cssFile);
   }
 }
+
