@@ -1951,7 +1951,7 @@ body.sidebar-toggled footer.sticky-footer {
     }
 }
 
-@media (max-width:765px) {
+@media (max-width:767px) {
    .sidebar-brand-text {
         display: inline !important;
     }
