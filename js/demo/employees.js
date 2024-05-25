@@ -5,7 +5,7 @@
 // Pie Chart contracts
 const pieChartEl = document.getElementById('EmployeePieChart');
 const pieChartData = {
-  labels: ['العقود المنتهية', ' تنتهي اليوم', ' تنتهي غدا', 'تنتهي لاحقا'],
+  labels: [' تنتهي اليوم', 'منتهيه', ' تنتهي غدا', 'تنتهي لاحقا'],
   datasets: [{
     data: [342, 313, 245, 210],
     backgroundColor: ['rgba(255, 159, 64, .9)', 'rgba(255, 64, 105, .9)', 'rgba(153, 102, 255,.9 )','rgba(54, 162, 235, .9)'],
